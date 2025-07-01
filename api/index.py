@@ -5,8 +5,8 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-TitleId = "C5214"
-SecretKey = "6457QMPE7ORB5YND8U7FG6Q848MZJAHNBHEXQS7S5MBA5S1W7C"
+TitleId = "51700"
+SecretKey = "SEPGWU95JEGRJI581E7TO64K1BINIFAFT1WYB5M45FF1FC859J"
 ApiKey = "OC|9403825143052659|9fd9b7040ff699fe0c7d9f58cc949748"
 DiscordWebhook = ""
 def GetAuthHeaders() -> dict:
