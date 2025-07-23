@@ -8,8 +8,8 @@ from flask import Flask, jsonify, request
 class GameInfo:
 
     def __init__(self):
-        self.TitleId: str = "A1870"
-        self.SecretKey: str = "P1P6DEORMOUTI87OY9338JP6MOZ3BNJOCEUE6CEA3P7D9Y56QI"
+        self.TitleId: str = "528E2"
+        self.SecretKey: str = "UHRFXW8DKQEIXEWCEIF6DZ7IZRSC51Y3YFZCTS5HSW8G74J7JP"
         self.ApiKey: str = "OC|9984216741704494|3389d9b8d8a9ecd0696eda11b92029dc"
 
     def get_auth_headers(self):
@@ -24,8 +24,8 @@ app = Flask(__name__)
 playfab_cache = {}
 mute_cache = {}
 
-settings.TitleId = "A1870"
-settings.SecretKey = "P1P6DEORMOUTI87OY9338JP6MOZ3BNJOCEUE6CEA3P7D9Y56QI"
+settings.TitleId = "528E2"
+settings.SecretKey = "UHRFXW8DKQEIXEWCEIF6DZ7IZRSC51Y3YFZCTS5HSW8G74J7JP"
 settings.ApiKey = "OC|9984216741704494|3389d9b8d8a9ecd0696eda11b92029dc"
 
 
@@ -169,7 +169,7 @@ def skibidi():
 
 @app.route('/api/TitleData', methods=['POST'])
 def titled_data():
-    return jsonify({"MOTD": "<color=ORANGE>WELCOME TO CUPTAGV2 </color>\n\n<color=red>UPDATE: FLYINGMONKES, OWNERS ARE CUP AND POPS DISCORD!</color>\n\n<color=blue>DISCORD: https://discord.gg/6xVBw3NKCA</color>\n\n<color=orange>CREDITS: POPS</color>"})
+    return jsonify({"MOTD": "<color=ORANGE>WELCOME TO LightTag </color>\n\n<color=red>UPDATE: FLYINGMONKES,MAIN OWNERS ARE wxsted DISCORD!</color>\n\n<color=blue>DISCORD: https://discord.gg/35tRJ2ETh9</color>\n\n<color=orange></color>"})
 
     if req.status_code == 200:
         return jsonify(req.json().get("data").get("Data"))
